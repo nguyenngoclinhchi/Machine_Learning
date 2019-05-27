@@ -1,6 +1,6 @@
 # Machine Learning book collection with Python and Julia programming languages: 
 
-## Recommed books in Python: 
+## Recommended books in Python: 
 
 1. Basic of Linear Algebra for Machine Learning
 Discover the Mathematical Language of Data in Python 
