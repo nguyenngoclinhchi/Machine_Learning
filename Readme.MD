@@ -31,7 +31,7 @@ others resouces, others writer but same theme :\
 14. Statistics and Machine Learning in Python, Edouard Duchesnay\
 15. Deep Learning & NLP Resources, Dragomir Radev
 
-Self-written documents: 
+Self-written documents: \
 16. Linh_Chi_Machine_Learning_Cheatsheet
 
 Recommended Youtube-links & online courses\
