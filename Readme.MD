@@ -1,4 +1,4 @@
-e-book from [Machine Learning Mastery](https://machinelearningmastery.com), Thankyou for jason brownlee for the e-books.
+#Machine Learning book collection with Python and Julia programming languages: 
 
 1. Basic of Linear Algebra for Machine Learning
 Discover the Mathematical Language of Data in Python 
@@ -30,3 +30,11 @@ Gradient Boosted Trees With XGboost and scikit-learn `(not have)`
 others resouces, others writer but same theme :\
 14. Statistics and Machine Learning in Python, Edouard Duchesnay\
 15. Deep Learning & NLP Resources, Dragomir Radev\
+
+Self-written documents: 
+16. Linh_Chi_Machine_Learning_Cheatsheet
+
+Recommended Youtube-links & online courses
+17. Machine-Learning course by Andrew Ng: https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN
+18. Machine-Learning website (Vietnamese): https://machinelearningcoban.com/2016/12/26/introduce/
+19. Machine-Learning course by Inside Bloomberg: https://www.youtube.com/watch?v=kE_t3Mm8Z50&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=2
