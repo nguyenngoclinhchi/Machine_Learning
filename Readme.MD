@@ -34,7 +34,7 @@ others resouces, others writer but same theme :\
 Self-written documents: 
 16. Linh_Chi_Machine_Learning_Cheatsheet
 
-Recommended Youtube-links & online courses
+Recommended Youtube-links & online courses\
 17. Machine-Learning course by Andrew Ng: https://www.youtube.com/watch?v=PPLop4L2eGk&list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN
 18. Machine-Learning website (Vietnamese): https://machinelearningcoban.com/2016/12/26/introduce/
 19. Machine-Learning course by Inside Bloomberg: https://www.youtube.com/watch?v=kE_t3Mm8Z50&list=PLnZuxOufsXnvftwTB1HL6mel1V32w0ThI&index=2
