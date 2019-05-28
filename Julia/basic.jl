@@ -16,3 +16,4 @@ end
 
 data = [65,51,2,1,23,84,68,3]
 bubble_sort!(data)
+data
