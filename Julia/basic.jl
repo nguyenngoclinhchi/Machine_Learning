@@ -1,19 +1,11 @@
-using Printf
-using Statistics
-
-
-function bubble_sort!(a)
-    n=length(a)
-    for i in 1:n-1
-        for j in 1:n-i
-            if a[j]>a[j+1]
-                a[j], a[j+1] = a[j+1], a[j]
-            end
-        end
+using Roots
+function polynomialGenerator(a...)
+    n = length(a)-1
+    poly = function(x)
+        return sum([a[i+1]*x^i for i in 0:n])
     end
-    return a
+    return poly
 end
-
-data = [65,51,2,1,23,84,68,3]
-bubble_sort!(data)
-data
+polynomial = polynomialGenerator(1,3,-10)
+zeroVals = find_zeros(polynomial,-10,10)
+println("Zeros of the function f(x): ", zeroVals)
