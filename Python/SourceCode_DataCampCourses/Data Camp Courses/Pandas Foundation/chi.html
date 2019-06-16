@@ -1,0 +1,920 @@
+<h1>CHAPTER 1: Data ingestion &amp; inspection</h1>
+
+<h2>NumPy and pandas working together</h2>
+
+<p>Pandas depends upon and interoperates with NumPy, the Python library for fast numeric array computations. For example, you can use the DataFrame attribute .values to represent a DataFrame <code>df</code> as a NumPy array. You can also pass pandas data structures to NumPy methods. In this exercise, we have imported pandas as pd and loaded world population data every 10 years since 1960 into the DataFrame df. This dataset was derived from the one used in the previous exercise.</p>
+
+<p>Your job is to extract the values and store them in an array using the attribute .values. You'll then use those values as input into the NumPy <code>np.log10()</code> method to compute the base 10 logarithm of the population values. Finally, you will pass the entire pandas DataFrame into the same NumPy <code>np.log10()</code> method and compare the results.</p>
+
+<p>```python</p>
+
+<h1>Import numpy</h1>
+
+<p>import numpy as np
+import pandas as pd</p>
+
+<h1>Create array of DataFrame values: np_vals</h1>
+
+<p>np_vals = df.values</p>
+
+<h1>Create new array of base 10 logarithm values: np<em>vals</em>log10</h1>
+
+<p>np<em>vals</em>log10 = np.log10(np_vals)</p>
+
+<h1>Create array of new DataFrame by passing df to np.log10(): df_log10</h1>
+
+<p>df_log10 = np.log10(df)</p>
+
+<h1>Print original and new data containers</h1>
+
+<p>[print(x, 'has type', type(eval(x))) for x in ['np<em>vals', 'np</em>vals<em>log10', 'df', 'df</em>log10']]
+```</p>
+
+<h2>Zip lists to build a DataFrame</h2>
+
+<p>In this exercise, you're going to make a pandas DataFrame of the top three countries to win gold medals since 1896 by first building a dictionary. list<em>keys contains the column names 'Country' and 'Total'. list</em>values contains the full names of each country and the number of gold medals awarded. The values have been taken from Wikipedia.</p>
+
+<p>Your job is to use these lists to construct a list of tuples, use the list of tuples to construct a dictionary, and then use that dictionary to construct a DataFrame. In doing so, you'll make use of the <code>list(), zip(), dict() and pd.DataFrame()</code> functions. Pandas has already been imported as pd.</p>
+
+<p>Note: The <code>zip()</code> function in Python 3 and above returns a special zip object, which is essentially a generator. To convert this zip object into a list, you'll need to use <code>list()</code>. You can learn more about the <code>zip()</code> function as well as generators in Python Data Science Toolbox (Part 2).</p>
+
+<p>```python</p>
+
+<h1>Zip the 2 lists together into one list of (key,value) tuples: zipped</h1>
+
+<p>zipped = list(zip(list<em>keys, list</em>values))</p>
+
+<h1>Inspect the list using print()</h1>
+
+<p>print(zipped)</p>
+
+<h1># Build a dictionary with the zipped list: data</h1>
+
+<p>data = dict(zipped)</p>
+
+<h1># Build and inspect a DataFrame from the dictionary: df</h1>
+
+<p>df = pd.DataFrame(data)
+print(df)
+```</p>
+
+<h2>Labeling your data</h2>
+
+<p>You can use the DataFrame attribute df.columns to view and assign new string labels to columns in a pandas DataFrame.</p>
+
+<p>In this exercise, we have imported pandas as pd and defined a DataFrame df containing top Billboard hits from the 1980s (from Wikipedia). Each row has the year, artist, song name and the number of weeks at the top. However, this DataFrame has the column labels a, b, c, d. Your job is to use the <code>df.columns</code> attribute to re-assign descriptive column labels</p>
+
+<p>```python</p>
+
+<h1>Build a list of labels: list_labels</h1>
+
+<p>list_labels = list(['year', 'artist', 'song', 'chart weeks'])</p>
+
+<h1>Assign the list of labels to the columns attribute: df.columns</h1>
+
+<p>df.columns = list_labels
+```</p>
+
+<h2>Building DataFrames with broadcasting</h2>
+
+<p>You can implicitly use 'broadcasting', a feature of NumPy, when creating pandas DataFrames. In this exercise, you're going to create a DataFrame of cities in Pennsylvania that contains the city name in one column and the state name in the second. We have imported the names of 15 cities as the list <code>cities</code>.</p>
+
+<p>Your job is to construct a DataFrame from the list of cities and the string <code>'PA'</code>.</p>
+
+<p>```python</p>
+
+<h1>Make a string with the value 'PA': state</h1>
+
+<p>state = 'PA'</p>
+
+<h1>Construct a dictionary: data</h1>
+
+<p>data = {'state':state, 'city':cities}</p>
+
+<h1>Construct a DataFrame from dictionary data: df</h1>
+
+<p>df = pd.DataFrame(data)</p>
+
+<h1>Print the DataFrame</h1>
+
+<p>print(df)
+```</p>
+
+<h2>Reading a flat file</h2>
+
+<p>In previous exercises, we have preloaded the data for you using the pandas function <code>read_csv()</code>. Now, it's your turn! Your job is to read the World Bank population data you saw earlier into a DataFrame using <code>read_csv()</code>. The file is available in the variable data_file.</p>
+
+<p>The next step is to reread the same file, but simultaneously rename the columns using the names keyword input parameter, set equal to a list of new column labels. You will also need to set <code>header=0</code> to rename the column labels.</p>
+
+<p>Finish up by inspecting the result with <code>df.head() and df.info()</code> in the IPython Shell (changing df to the name of your DataFrame variable).</p>
+
+<p>pandas has already been imported and is available in the workspace as pd.</p>
+
+<p>```python</p>
+
+<h1>Read in the file: df1</h1>
+
+<p>df1 = pd.read<em>csv(data</em>file)</p>
+
+<h1>Create a list of the new column labels: new_labels</h1>
+
+<p>new_labels = ['year', 'population']</p>
+
+<h1>Read in the file, specifying the header and names parameters: df2</h1>
+
+<p>df2 = pd.read<em>csv(data</em>file, header=0, names=new_labels)</p>
+
+<h1>Print both the DataFrames</h1>
+
+<p>print(df1)
+print(df2)
+```</p>
+
+<h2>Delimiters, headers, and extensions</h2>
+
+<p>Not all data files are clean and tidy. Pandas provides methods for reading those not-so-perfect data files that you encounter far too often.</p>
+
+<p>In this exercise, you have monthly stock data for four companies downloaded from Yahoo Finance. The data is stored as one row for each company and each column is the end-of-month closing price. The file name is given to you in the variable <code>file_messy</code>.</p>
+
+<p>In addition, this file has three aspects that may cause trouble for lesser tools: multiple header lines, comment records (rows) interleaved throughout the data rows, and space delimiters instead of commas.</p>
+
+<p>Your job is to use pandas to read the data from this problematic file<em>messy using non-default input options with <code>read_csv()</code> so as to tidy up the mess at read time. Then, write the cleaned up data to a CSV file with the variable file</em>clean that has been prepared for you, as you might do in a real data workflow.</p>
+
+<p>You can learn about the option input parameters needed by using <code>help()</code> on the pandas function <code>pd.read_csv()</code>.</p>
+
+<p>```python</p>
+
+<h1>Read the raw file as-is: df1</h1>
+
+<p>df1 = pd.read<em>csv(file</em>messy)</p>
+
+<h1>Print the output of df1.head()</h1>
+
+<p>print(df1.head())</p>
+
+<h1>Read in the file with the correct parameters: df2</h1>
+
+<p>df2 = pd.read<em>csv(file</em>messy, delimiter=' ', header=3, comment='#')</p>
+
+<h1>Print the output of df2.head()</h1>
+
+<p>print(df2.head())</p>
+
+<h1>Save the cleaned up DataFrame to a CSV file without the index</h1>
+
+<p>df2.to<em>csv(file</em>clean, index=False)</p>
+
+<h1>Save the cleaned up DataFrame to an excel file without the index</h1>
+
+<p>df2.to<em>excel('file</em>clean.xlsx', index=False)
+```</p>
+
+<h2>Plotting series using pandas</h2>
+
+<p>Data visualization is often a very effective first step in gaining a rough understanding of a data set to be analyzed. Pandas provides data visualization by both depending upon and interoperating with the matplotlib library. You will now explore some of the basic plotting mechanics with pandas as well as related matplotlib options. We have pre-loaded a pandas DataFrame df which contains the data you need. Your job is to use the DataFrame method <code>df.plot()</code> to visualize the data, and then explore the optional matplotlib input parameters that this <code>.plot()</code> method accepts.</p>
+
+<p>The pandas <code>.plot()</code> method makes calls to matplotlib to construct the plots. This means that you can use the skills you've learned in previous visualization courses to customize the plot. In this exercise, you'll add a custom title and axis labels to the figure.</p>
+
+<p>Before plotting, inspect the DataFrame in the IPython Shell using <code>df.head()</code>. Also, use <code>type(df)</code> and note that it is a single column DataFrame.</p>
+
+<p>```python
+import pandas as pd
+import matplotlib.pyplot as plt</p>
+
+<h1>Create a plot with color='red'</h1>
+
+<p>df.plot(color='red')</p>
+
+<h1>Add a title</h1>
+
+<p>plt.title('Temperature in Austin')</p>
+
+<h1>Specify the x-axis label</h1>
+
+<p>plt.xlabel('Hours since midnight August 1, 2010')</p>
+
+<h1>Specify the y-axis label</h1>
+
+<p>plt.ylabel('Temperature (degrees F)')</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>Plotting DataFrames</h2>
+
+<p>Comparing data from several columns can be very illuminating. Pandas makes doing so easy with multi-column DataFrames. By default, calling <code>df.plot()</code> will cause pandas to over-plot all column data, with each column as a single line. In this exercise, we have pre-loaded three columns of data from a weather data set - temperature, dew point, and pressure - but the problem is that pressure has different units of measure. The pressure data, measured in Atmospheres, has a different vertical scaling than that of the other two data columns, which are both measured in degrees Fahrenheit.</p>
+
+<p>Your job is to plot all columns as a multi-line plot, to see the nature of vertical scaling problem. Then, use a list of column names passed into the DataFrame <code>df[column_list]</code> to limit plotting to just one column, and then just 2 columns of data. When you are finished, you will have created 4 plots. You can cycle through them by clicking on the 'Previous Plot' and 'Next Plot' buttons.</p>
+
+<p>As in the previous exercise, inspect the DataFrame df in the IPython Shell using the <code>.head()</code> and <code>.info()</code> methods.</p>
+
+<p>```python</p>
+
+<h1>Plot all columns (default)</h1>
+
+<p>df.plot()
+plt.show()</p>
+
+<h1>Plot all columns as subplots</h1>
+
+<p>df.plot(subplots=True)
+plt.show()</p>
+
+<h1>Plot just the Dew Point data</h1>
+
+<p>column<em>list1 = ['Dew Point (deg F)']
+df[column</em>list1].plot()
+plt.show()</p>
+
+<h1>Plot the Dew Point and Temperature data, but not the Pressure data</h1>
+
+<p>column<em>list2 = ['Temperature (deg F)','Dew Point (deg F)']
+df[column</em>list2].plot()
+plt.show()
+```</p>
+
+<h1>CHAPTER 2: Exploratory data analysis</h1>
+
+<h2>pandas line plots</h2>
+
+<p>In the previous chapter, you saw that the .plot() method will place the Index values on the x-axis by default. In this exercise, you'll practice making line plots with specific columns on the x and y axes.</p>
+
+<p>You will work with a dataset consisting of monthly stock prices in 2015 for AAPL, GOOG, and IBM. The stock prices were obtained from Yahoo Finance. Your job is to plot the 'Month' column on the x-axis and the AAPL and IBM prices on the y-axis using a list of column names.</p>
+
+<p>All necessary modules have been imported for you, and the DataFrame is available in the workspace as df. Explore it using methods such as <code>.head(), .info(), and .describe()</code> to see the column names.</p>
+
+<p>```python</p>
+
+<h1>Create a list of y-axis column names: y_columns</h1>
+
+<p>y_columns = ['AAPL', 'IBM']</p>
+
+<h1>Generate a line plot</h1>
+
+<p>df.plot(x='Month', y=y_columns)</p>
+
+<h1>Add the title</h1>
+
+<p>plt.xlabel('Monthly stock prices')</p>
+
+<h1>Add the y-axis label</h1>
+
+<p>plt.ylabel('Price ($US)')</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>pandas scatter plots</h2>
+
+<p>Pandas scatter plots are generated using the <code>kind='scatter'</code> keyword argument. Scatter plots require that the x and y columns be chosen by specifying the x and y parameters inside <code>.plot()</code>. Scatter plots also take an s keyword argument to provide the radius of each circle to plot in pixels.</p>
+
+<p>In this exercise, you're going to plot fuel efficiency (miles-per-gallon) versus horse-power for 392 automobiles manufactured from 1970 to 1982 from the UCI Machine Learning Repository.</p>
+
+<p>The size of each circle is provided as a NumPy array called sizes. This array contains the normalized <code>'weight'</code> of each automobile in the dataset.</p>
+
+<p>All necessary modules have been imported and the DataFrame is available in the workspace as df</p>
+
+<p>```python</p>
+
+<h1>Generate a scatter plot</h1>
+
+<p>df.plot(kind='scatter', x='hp', y='mpg', s=sizes)</p>
+
+<h1>Add the title</h1>
+
+<p>plt.title('Fuel efficiency vs Horse-power')</p>
+
+<h1>Add the x-axis label</h1>
+
+<p>plt.xlabel('Horse-power')</p>
+
+<h1>Add the y-axis label</h1>
+
+<p>plt.ylabel('Fuel efficiency (mpg)')</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>pandas box plots</h2>
+
+<p>While pandas can plot multiple columns of data in a single figure, making plots that share the same x and y axes, there are cases where two columns cannot be plotted together because their units do not match. The .plot() method can generate subplots for each column being plotted. Here, each plot will be scaled independently.</p>
+
+<p>In this exercise your job is to generate box plots for fuel efficiency (mpg) and weight from the automobiles data set. To do this in a single figure, you'll specify subplots=True inside <code>.plot()</code> to generate two separate plots.</p>
+
+<p>All necessary modules have been imported and the automobiles dataset is available in the workspace as df.</p>
+
+<p>```python</p>
+
+<h1>Make a list of the column names to be plotted: cols</h1>
+
+<p>cols = ['weight', 'mpg']</p>
+
+<h1>Generate the box plots</h1>
+
+<p>df[cols].plot(subplots=True, kind='box')</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>pandas hist, pdf and cdf</h2>
+
+<p>Pandas relies on the .hist() method to not only generate histograms, but also plots of <code>probability density functions (PDFs) and cumulative density functions (CDFs)</code>.</p>
+
+<p>In this exercise, you will work with a dataset consisting of restaurant bills that includes the amount customers tipped.</p>
+
+<p>The original dataset is provided by the Seaborn package.</p>
+
+<p>Your job is to plot a PDF and CDF for the fraction column of the tips dataset. This column contains information about what fraction of the total bill is comprised of the tip.</p>
+
+<p>Remember, when plotting the PDF, you need to specify normed=True in your call to <code>.hist()</code>, and when plotting the CDF, you need to specify <code>cumulative=True</code> in addition to normed=True.</p>
+
+<p>All necessary modules have been imported and the tips dataset is available in the workspace as df. Also, some formatting code has been written so that the plots you generate will appear on separate rows.</p>
+
+<p>```python</p>
+
+<h1>This formats the plots such that they appear on separate rows</h1>
+
+<p>fig, axes = plt.subplots(nrows=2, ncols=1)</p>
+
+<h1>Plot the PDF, if will appear on the first space, axes have 2 spaces</h1>
+
+<p>df.fraction.plot(ax=axes[0], kind='hist', normed=True, bins=30, range=(0,.3))
+plt.show()</p>
+
+<h1>Plot the CDF, if will appear on the second space, axes have 2 spaces</h1>
+
+<p>df.fraction.plot(ax=axes[1], kind='hist', normed=True, bins=30, range=(0,.3), cumulative=True)
+plt.show()
+```</p>
+
+<h2>Box Plot</h2>
+
+<p>The picture below shows the box plot structure:</p>
+
+<p><img src="BoxPlot.png" alt="Box Plot" /></p>
+
+<h2>Bachelor's degrees awarded to women</h2>
+
+<p>In this exercise, you will investigate statistics of the percentage of Bachelor's degrees awarded to women from 1970 to 2011. Data is recorded every year for 17 different fields. This data set was obtained from the Digest of Education Statistics.</p>
+
+<p>Your job is to compute the minimum and maximum values of the <code>'Engineering'</code> column and generate a line plot of the mean value of all 17 academic fields per year. To perform this step, you'll use the <code>.mean()</code> method with the keyword argument <code>axis='columns'</code>. This computes the mean across all columns per row.</p>
+
+<p>The DataFrame has been pre-loaded for you as df with the index set to <code>'Year'</code>.</p>
+
+<p>```python</p>
+
+<h1>Print the minimum value of the Engineering column</h1>
+
+<p>print(df['Engineering'].min())</p>
+
+<h1>Print the maximum value of the Engineering column</h1>
+
+<p>print(df['Engineering'].max())</p>
+
+<h1>Construct the mean percentage per year: mean</h1>
+
+<p>mean = df.mean(axis='columns')</p>
+
+<h1>Plot the average percentage per year</h1>
+
+<p>mean.plot()</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>Median vs mean</h2>
+
+<p>In many data sets, there can be large differences in the mean and median value due to the presence of outliers.</p>
+
+<p>In this exercise, you'll investigate the mean, median, and max fare prices paid by passengers on the Titanic and generate a box plot of the fare prices. This data set was obtained from Vanderbilt University.</p>
+
+<p>All necessary modules have been imported and the DataFrame is available in the workspace as df.</p>
+
+<p>```python</p>
+
+<h1>Print summary statistics of the fare column with .describe()</h1>
+
+<p>print(df['fare'].describe())</p>
+
+<h1>Generate a box plot of the fare column</h1>
+
+<p>df['fare'].plot(kind='box')</p>
+
+<h1>Show the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h2>Quantiles</h2>
+
+<p>In this exercise, you'll investigate the probabilities of life expectancy in countries around the world. This dataset contains life expectancy for persons born each year from 1800 to 2015. Since country names change or results are not reported, not every country has values. This dataset was obtained from Gapminder.</p>
+
+<p>First, you will determine the number of countries reported in 2015. There are a total of 260 unique countries in the entire dataset. Then, you will compute the 5th and 95th percentiles of life expectancy over the entire dataset. Finally, you will make a box plot of life expectancy every 50 years from 1800 to 2000. Notice the large change in the distributions over this period.</p>
+
+<p>The dataset has been pre-loaded into a DataFrame called df</p>
+
+<p>```python</p>
+
+<h1>Print the number of countries reported in 2015</h1>
+
+<p>print(df['2015'].count())</p>
+
+<h1>Print the 5th and 95th percentiles</h1>
+
+<p>q=[0.05, 0.95]
+print(df.quantile(q))</p>
+
+<h1>Generate a box plot</h1>
+
+<p>years = ['1800','1850','1900','1950','2000']
+df[years].plot(kind='box')
+plt.show()
+```</p>
+
+<h2>Standard deviation of temperature</h2>
+
+<p>Let's use the mean and standard deviation to explore differences in temperature distributions in Pittsburgh in 2013. The data has been obtained from Weather Underground.</p>
+
+<p>In this exercise, you're going to compare the distribution of daily temperatures in January and March. You'll compute the mean and standard deviation for these two months. You will notice that while the mean values are similar, the standard deviations are quite different, meaning that one month had a larger fluctuation in temperature than the other.</p>
+
+<p>The DataFrames have been pre-loaded for you as january, which contains the January data, and march, which contains the March data.</p>
+
+<p>```python</p>
+
+<h1>Print the mean of the January and March data</h1>
+
+<p>print(january.mean(), march.mean())</p>
+
+<h1>Print the standard deviation of the January and March data</h1>
+
+<p>print(january.std(), march.std())
+```</p>
+
+<h2>Separate and summarize</h2>
+
+<p>Let's use population filtering to determine how the automobiles in the US differ from the global average and standard deviation. How does the distribution of fuel efficiency (MPG) for the US differ from the global average and standard deviation?</p>
+
+<p>In this exercise, you'll compute the means and standard deviations of all columns in the full automobile dataset. Next, you'll compute the same quantities for just the US population and subtract the global values from the US values.</p>
+
+<p>All necessary modules have been imported and the DataFrame has been pre-loaded as df.</p>
+
+<p>```python</p>
+
+<h1>Compute the global mean and global standard deviation: global<em>mean, global</em>std</h1>
+
+<p>global<em>mean = df.mean()
+global</em>std = df.std()</p>
+
+<h1>Filter the US population from the origin column: us</h1>
+
+<p>us = (df[df['origin']=='US'])</p>
+
+<h1>Compute the US mean and US standard deviation: us<em>mean, us</em>std</h1>
+
+<p>us<em>mean = us.mean()
+us</em>std = us.std()</p>
+
+<h1>Print the differences</h1>
+
+<p>print(us<em>mean - global</em>mean)
+print(us<em>std - global</em>std)
+```</p>
+
+<h2>Separate and plot</h2>
+
+<p>Population filtering can be used alongside plotting to quickly determine differences in distributions between the sub-populations. You'll work with the Titanic dataset.</p>
+
+<p>There were three passenger classes on the Titanic, and passengers in each class paid a different fare price. In this exercise, you'll investigate the differences in these fare prices.</p>
+
+<p>Your job is to use Boolean filtering and generate box plots of the fare prices for each of the three passenger classes. The fare prices are contained in the 'fare' column and passenger class information is contained in the 'pclass' column.</p>
+
+<p>When you're done, notice the portions of the box plots that differ and those that are similar.</p>
+
+<p>The DataFrame has been pre-loaded for you as titanic</p>
+
+<p>```python</p>
+
+<h1>Display the box plots on 3 separate rows and 1 column</h1>
+
+<p>fig, axes = plt.subplots(nrows=3, ncols=1)</p>
+
+<h1>Generate a box plot of the fare prices for the First passenger class</h1>
+
+<p>titanic.loc[titanic['pclass'] == 1].plot(ax=axes[0], y='fare', kind='box')</p>
+
+<h1>Generate a box plot of the fare prices for the Second passenger class</h1>
+
+<p>titanic.loc[titanic['pclass'] == 2].plot(ax=axes[1], y='fare', kind='box')</p>
+
+<h1>Generate a box plot of the fare prices for the Third passenger class</h1>
+
+<p>titanic.loc[titanic['pclass'] == 3].plot(ax=axes[2], y='fare', kind='box')</p>
+
+<h1>Display the plot</h1>
+
+<p>plt.show()
+```</p>
+
+<h1>CHAPTER 3: Time Series with Pandas</h1>
+
+<h2>Reading and slicing times</h2>
+
+<p>For this exercise, we have read in the same data file using three different approaches:</p>
+
+<p>df1 = pd.read_csv(filename)</p>
+
+<p>df2 = pd.read<em>csv(filename, parse</em>dates=['Date'])</p>
+
+<p>df3 = pd.read<em>csv(filename, index</em>col='Date', parse_dates=True)</p>
+
+<p>Use the .head() and .info() methods in the IPython Shell to inspect the DataFrames. Then, try to index each DataFrame with a datetime string. Which of the resulting DataFrames allows you to easily index and slice data by dates using, for example, <code>df1.loc['2010-Aug-01']</code>? </p>
+
+<p>--> <code>ANS: df3</code></p>
+
+<h2>Creating and using a DatetimeIndex</h2>
+
+<p>The pandas Index is a powerful way to handle time series data, so it is valuable to know how to build one yourself. Pandas provides the <code>pd.to_datetime()</code> function for just this task. For example, if passed the list of strings <code>['2015-01-01 091234','2015-01-01 091234']</code> and a format specification variable, such as <code>format='%Y-%m-%d %H%M%S</code>, pandas will parse the string into the proper datetime elements and build the datetime objects.</p>
+
+<p>In this exercise, a list of temperature data and a list of date strings has been pre-loaded for you as <code>temperature_list</code> and date_list respectively. Your job is to use the <code>.to_datetime()</code> method to build a DatetimeIndex out of the list of date strings, and to then use it along with the list of temperature data to build a pandas <code>Series</code>.</p>
+
+<p>```python</p>
+
+<h1>Prepare a format string: time_format</h1>
+
+<p>time_format = '%Y-%m-%d %H:%M'</p>
+
+<h1>Convert date<em>list into a datetime object: my</em>datetimes</h1>
+
+<p>my<em>datetimes = pd.to</em>datetime(date<em>list, format=time</em>format)  </p>
+
+<h1>Construct a pandas Series using temperature<em>list and my</em>datetimes: time_series</h1>
+
+<p>time<em>series = pd.Series(temperature</em>list, index=my_datetimes)
+```</p>
+
+<h2>Partial string indexing and slicing</h2>
+
+<p>Pandas time series support "partial string" indexing. What this means is that even when passed only a portion of the datetime, such as the date but not the time, pandas is remarkably good at doing what one would expect. Pandas datetime indexing also supports a wide variety of commonly used datetime string formats, even when mixed.</p>
+
+<p>In this exercise, a time series that contains hourly weather data has been pre-loaded for you. This data was read using the parse<em>dates=True option in read</em>csv() with index_col="Dates" so that the Index is indeed a DatetimeIndex.</p>
+
+<p>All data from the 'Temperature' column has been extracted into the variable ts0. Your job is to use a variety of natural date strings to extract one or more values from ts0.</p>
+
+<p>After you are done, you will have three new variables - ts1, ts2, and ts3. You can slice these further to extract only the first and last entries of each. Try doing this after your submission for more practice.</p>
+
+<p>```python</p>
+
+<h1>Extract the hour from 9pm to 10pm on '2010-10-11': ts1</h1>
+
+<p>ts1 = ts0.loc['2010-10-11 21:00:00':'2010-10-11 22:00:00']</p>
+
+<h1>Extract '2010-07-04' from ts0: ts2</h1>
+
+<p>ts2 = ts0.loc['2010-07-04']</p>
+
+<h1>Extract data from '2010-12-15' to '2010-12-31': ts3</h1>
+
+<p>ts3 = ts0.loc['2010-12-15':'2010-12-31']</p>
+
+<p>```</p>
+
+<h2>Resampling and frequency</h2>
+
+<p>Pandas provides methods for resampling time series data. When downsampling or upsampling, the syntax is similar, but the methods called are different. Both use the concept of <code>'method chaining' - df.method1().method2().method3()</code> - to direct the output from one method call to the input of the next, and so on, as a sequence of operations, one feeding into the next.</p>
+
+<p>For example, if you have hourly data, and just need daily data, pandas will not guess how to throw out the 23 of 24 points. You must specify this in the method. One approach, for instance, could be to take the mean, as in <code>df.resample('D').mean()</code>.</p>
+
+<p>In this exercise, a data set containing hourly temperature data has been pre-loaded for you. Your job is to resample the data using a variety of aggregation methods to answer a few questions.</p>
+
+<p>```python</p>
+
+<h1>Downsample to 6 hour data and aggregate by mean: df1</h1>
+
+<p>df1 = df['Temperature'].resample('6h').mean()
+print(df)
+print(df1)</p>
+
+<h1>Downsample to daily data and count the number of data points: df2</h1>
+
+<p>df2 = df['Temperature'].resample('D').count()
+print(df2)
+```</p>
+
+<h2>Separating and resampling</h2>
+
+<p>With pandas, you can resample in different ways on different subsets of your data. For example, resampling different months of data with different aggregations. In this exercise, the data set containing hourly temperature data from the last exercise has been pre-loaded.</p>
+
+<p>Your job is to resample the data using a variety of aggregation methods. The DataFrame is available in the workspace as df. You will be working with the <code>'Temperature'</code> column.</p>
+
+<p>```python</p>
+
+<h1>Extract temperature data for August: august</h1>
+
+<p>august = (df['Temperature']).loc['2010-08']</p>
+
+<h1>Downsample to obtain only the daily highest temperatures in August: august_highs</h1>
+
+<p>august_highs = august.resample('D').max()</p>
+
+<h1>Extract temperature data for February: february</h1>
+
+<p>february = (df['Temperature']).loc['2010-02']</p>
+
+<h1>Downsample to obtain the daily lowest temperatures in February: february_lows</h1>
+
+<p>february_lows = february.resample('D').min()
+```</p>
+
+<h2>Rolling mean and frequency</h2>
+
+<p>In this exercise, some hourly weather data is pre-loaded for you. You will continue to practice resampling, this time using rolling means.</p>
+
+<p>Rolling means (or moving averages) are generally used to smooth out short-term fluctuations in time series data and highlight long-term trends. You can read more about them here.</p>
+
+<p>To use the <code>.rolling()</code> method, you must always use method chaining, first calling <code>.rolling()</code> and then chaining an aggregation method after it. For example, with a Series hourly_data, <code>hourly_data.rolling(window=24).mean()</code> would compute new values for each hourly point, based on a 24-hour window stretching out behind each point. The frequency of the output data is the same: it is still hourly. Such an operation is useful for smoothing time series data.</p>
+
+<p>Your job is to resample the data using the combination of <code>.rolling()</code> and <code>.mean()</code>. You will work with the same DataFrame df from the previous exercise.</p>
+
+<p>```python</p>
+
+<h1>Extract data from 2010-Aug-01 to 2010-Aug-15: unsmoothed</h1>
+
+<p>unsmoothed = df['Temperature']['2010-Aug-01':'2010-Aug-15']</p>
+
+<h1>Apply a rolling mean with a 24 hour window: smoothed</h1>
+
+<p>smoothed = unsmoothed.rolling(window=24).mean()</p>
+
+<h1>Create a new DataFrame with columns smoothed and unsmoothed: august</h1>
+
+<p>august = pd.DataFrame({'smoothed':smoothed, 'unsmoothed':unsmoothed})</p>
+
+<h1>Plot both smoothed and unsmoothed data using august.plot().</h1>
+
+<p>august.plot()
+plt.show()
+```</p>
+
+<h2>Resample and roll with it</h2>
+
+<p>As of pandas version 0.18.0, the interface for applying rolling transformations to time series has become more consistent and flexible, and feels somewhat like a groupby (If you do not know what a groupby is, don't worry, you will learn about it in the next course!).</p>
+
+<p>You can now flexibly chain together resampling and rolling operations. In this exercise, the same weather data from the previous exercises has been pre-loaded for you. Your job is to extract one month of data, resample to find the daily high temperatures, and then use a rolling and aggregation operation to smooth the data.</p>
+
+<p>```python
+import matplotlib.pyplot as plt</p>
+
+<h1>Extract the August 2010 data: august</h1>
+
+<p>august = df['Temperature']['2010-Aug']</p>
+
+<h1>Resample to daily data, aggregating by max: daily_highs</h1>
+
+<p>daily_highs = august.resample('D').max()</p>
+
+<h1>Use a rolling 7-day window with method chaining to smooth the daily high temperatures in August</h1>
+
+<p>daily<em>highs</em>smoothed = daily<em>highs.rolling(window=7).mean()
+print(daily</em>highs_smoothed)
+```</p>
+
+<h2>Method chaining and filtering</h2>
+
+<p>We've seen that pandas supports method chaining. This technique can be very powerful when cleaning and filtering data.</p>
+
+<p>In this exercise, a DataFrame containing flight departure data for a single airline and a single airport for the month of July 2015 has been pre-loaded. Your job is to use <code>.str()</code> filtering and method chaining to generate summary statistics on flight delays each day to Dallas.</p>
+
+<p>```python</p>
+
+<h1>Strip extra whitespace from the column names: df.columns</h1>
+
+<p>df.columns = df.columns.str.strip()</p>
+
+<h1>Extract data for which the destination airport is Dallas: dallas</h1>
+
+<p>dallas = df['Destination Airport'].str.contains("DAL")</p>
+
+<h1>Compute the total number of Dallas departures each day: daily_departures</h1>
+
+<p>daily<em>departures = dallas.resample('D').sum()
+print(daily</em>departures)</p>
+
+<h1>Generate the summary statistics for daily Dallas departures: stats</h1>
+
+<p>stats = daily_departures.describe()
+```</p>
+
+<h2>Missing values and interpolation</h2>
+
+<p>One common application of interpolation in data analysis is to fill in missing data.</p>
+
+<p>In this exercise, noisy measured data that has some dropped or otherwise missing values has been loaded. The goal is to compare two time series, and then look at summary statistics of the differences. The problem is that one of the data sets is missing data at some of the times. The pre-loaded data ts1 has value for all times, yet the data set ts2 does not: it is missing data for the weekends.</p>
+
+<p>Your job is to first interpolate to fill in the data for all days. Then, compute the differences between the two data sets, now that they both have full support for all times. Finally, generate the summary statistics that describe the distribution of differences.</p>
+
+<p>```python</p>
+
+<h1>Reset the index of ts2 to ts1, and then use linear interpolation to fill in the NaNs: ts2_interp</h1>
+
+<p>ts2_interp = pd.Series(ts2, index=ts1).interpolate(how='linear')</p>
+
+<h1>Compute the absolute difference of ts1 and ts2_interp: differences</h1>
+
+<p>differences = np.abs(ts1 - ts2_interp)</p>
+
+<h1>Generate and print summary statistics of the differences</h1>
+
+<p>print(differences)
+```</p>
+
+<h2>Missing values and interpolation</h2>
+
+<p>One common application of interpolation in data analysis is to fill in missing data.</p>
+
+<p>In this exercise, noisy measured data that has some dropped or otherwise missing values has been loaded. The goal is to compare two time series, and then look at summary statistics of the differences. The problem is that one of the data sets is missing data at some of the times. The pre-loaded data ts1 has value for all times, yet the data set ts2 does not: it is missing data for the weekends.</p>
+
+<p>Your job is to first interpolate to fill in the data for all days. Then, compute the differences between the two data sets, now that they both have full support for all times. Finally, generate the summary statistics that describe the distribution of differences.</p>
+
+<p>```python</p>
+
+<h1>Reset the index of ts2 to ts1, and then use linear interpolation to fill in the NaNs: ts2_interp</h1>
+
+<p>ts2_interp = ts2.reindex(ts1.index).interpolate(how='linear')</p>
+
+<h1>Compute the absolute difference of ts1 and ts2_interp: differences</h1>
+
+<p>differences = np.abs(ts1 - ts2_interp)</p>
+
+<h1>Generate and print summary statistics of the differences</h1>
+
+<p>print(differences.describe())
+```</p>
+
+<h2>Time zones and conversion</h2>
+
+<p>Time zone handling with pandas typically assumes that you are handling the Index of the Series. In this exercise, you will learn how to handle timezones that are associated with datetimes in the column data, and not just the Index.</p>
+
+<p>You will work with the flight departure dataset again, and this time you will select Los Angeles ('LAX') as the destination airport.</p>
+
+<p>Here we will use a mask to ensure that we only compute on data we actually want. To learn more about Boolean masks, click here!</p>
+
+<p>```python</p>
+
+<h1>Build a Boolean mask to filter out all the 'LAX' departure flights: mask</h1>
+
+<p>mask = df['Destination Airport'] == 'LAX'</p>
+
+<h1>Use the mask to subset the data: la</h1>
+
+<p>la = df[mask]</p>
+
+<h1>Combine two columns of data to create a datetime series: times<em>tz</em>none</h1>
+
+<p>times<em>tz</em>none = pd.to_datetime(la['Date (MM/DD/YYYY)'] + ' ' + la['Wheels-off Time'])</p>
+
+<h1>Localize the time to US/Central: times<em>tz</em>central</h1>
+
+<p>times<em>tz</em>central = times<em>tz</em>none.dt.tz_localize(tz='US/Central')</p>
+
+<h1>Convert the datetimes from US/Central to US/Pacific</h1>
+
+<p>times<em>tz</em>pacific = times<em>tz</em>central.dt.tz_convert(tz='US/Pacific')
+```</p>
+
+<h2>Plotting time series, datetime indexing</h2>
+
+<p>Pandas handles datetimes not only in your data, but also in your plotting.</p>
+
+<p>In this exercise, some time series data has been pre-loaded. However, we have not parsed the date-like columns nor set the index, as we have done for you in the past!</p>
+
+<p>The plot displayed is how pandas renders data with the default integer/positional index. Your job is to convert the 'Date' column from a collection of strings into a collection of datetime objects. Then, you will use this converted 'Date' column as your new index, and re-plot the data, noting the improved datetime awareness. After you are done, you can cycle between the two plots you generated by clicking on the 'Previous Plot' and 'Next Plot' buttons.</p>
+
+<p>Before proceeding, look at the plot shown and observe how pandas handles data with the default integer index. Then, inspect the DataFrame df using the <code>.head()</code> method in the IPython Shell to get a feel for its structure.</p>
+
+<p>```python</p>
+
+<h1>Plot the raw data before setting the datetime index</h1>
+
+<p>df1 = df
+df.head()
+df.plot()
+plt.show()</p>
+
+<p>time_format = '%Y-%m-%d %H:%M'</p>
+
+<h1>Convert the 'Date' column into a collection of datetime objects: df.Date</h1>
+
+<p>pd.to_datetime(df.Date) </p>
+
+<h1>Set the index to be the converted 'Date' column</h1>
+
+<p>df.set_index('Date', inplace=True)</p>
+
+<h1>print(df['Date'])</h1>
+
+<h1>Re-plot the DataFrame to see that the axis is now datetime aware!</h1>
+
+<p>df.plot()
+plt.show()
+```</p>
+
+<h2>Plotting date ranges, partial indexing</h2>
+
+<p>Now that you have set the DatetimeIndex in your DataFrame, you have a much more powerful and flexible set of tools to use when plotting your time series data. Of these, one of the most convenient is partial string indexing and slicing. In this exercise, we've pre-loaded a full year of Austin 2010 weather data, with the index set to be the datetime parsed 'Date' column as shown in the previous exercise.</p>
+
+<p>Your job is to use partial string indexing of the dates, in a variety of datetime string formats, to plot all the summer data and just one week of data together. After you are done, you can cycle between the two plots by clicking on the 'Previous Plot' and 'Next Plot' buttons.</p>
+
+<p>First, remind yourself how to extract one month of temperature data using 'May 2010' as a key into <code>df.Temperature[]</code>, and call head() to inspect the result: <code>df.Temperature['May 2010'].head()</code>.</p>
+
+<p>```python</p>
+
+<h1>Plot the summer data</h1>
+
+<p>df.Temperature['2010-Jun':'2010-Aug'].plot()
+plt.show()
+plt.clf()</p>
+
+<h1>Plot the one week data</h1>
+
+<p>df.Temperature['2010-06-10':'2010-06-17'].plot()
+plt.show()
+plt.clf()
+```</p>
+
+<h1>Chapter 4: Case Study</h1>
+
+<h2>Reading in a data file</h2>
+
+<p>Now that you have identified the method to use to read the data, let's try to read one file. The problem with real data such as this is that the files are almost never formatted in a convenient way. In this exercise, there are several problems to overcome in reading the file. First, there is no header, and thus the columns don't have labels. There is also no obvious index column, since none of the data columns contain a full date or time.</p>
+
+<p>Your job is to read the file into a DataFrame using the default arguments. After inspecting it, you will re-read the file specifying that there are no headers supplied.</p>
+
+<p>The CSV file has been provided for you as the variable <code>data_file</code></p>
+
+<p>```python</p>
+
+<h1>Import pandas</h1>
+
+<p>import pandas as pd</p>
+
+<h1>Read in the data file: df</h1>
+
+<p>df = pd.read<em>csv(data</em>file)</p>
+
+<h1>Print the output of df.head()</h1>
+
+<p>print(df.head())</p>
+
+<h1>Read in the data file with header=None: df_headers</h1>
+
+<p>df<em>headers = pd.read</em>csv(data_file, header=None)</p>
+
+<h1>Print the output of df_headers.head()</h1>
+
+<p>print(df_headers.head())
+```</p>
+
+<h2>Re-assigning column names</h2>
+
+<p>After the initial step of reading in the data, the next step is to clean and tidy it so that it is easier to work with.</p>
+
+<p>In this exercise, you will begin this cleaning process by re-assigning column names and dropping unnecessary columns.</p>
+
+<p>pandas has been imported in the workspace as pd, and the file <code>NOAA_QCLCD_2011_hourly_13904.txt</code> has been parsed and loaded into a DataFrame df. The comma separated string of column names, column<em>labels, and list of columns to drop, list</em>to_drop, have also been loaded for you.</p>
+
+<p>```python</p>
+
+<h1>Split on the comma to create a list: column<em>labels</em>list</h1>
+
+<p>column<em>labels</em>list = column_labels.split(',')</p>
+
+<h1>Assign the new column labels to the DataFrame: df.columns</h1>
+
+<p>df.columns = column<em>labels</em>list</p>
+
+<h1>Remove the appropriate columns: df_dropped</h1>
+
+<p>df<em>dropped = df.drop(list</em>to_drop, axis='columns')</p>
+
+<h1>Print the output of df_dropped.head()</h1>
+
+<p>print(df_dropped.head())
+```</p>
+
+<h2>Cleaning and tidying datetime data</h2>
+
+<p>In order to use the full power of pandas time series, you must construct a DatetimeIndex. To do so, it is necessary to clean and transform the date and time columns.</p>
+
+<p>The DataFrame df_dropped you created in the last exercise is provided for you and pandas has been imported as pd.</p>
+
+<p>Your job is to clean up the date and Time columns and combine them into a datetime collection to be used as the Index.</p>
