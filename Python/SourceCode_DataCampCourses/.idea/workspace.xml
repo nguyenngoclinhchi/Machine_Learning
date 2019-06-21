@@ -2,9 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14feb2ee-8964-4197-995a-f6b99564d2a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CourseScraping.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/exchange.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/oil_price.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/pittsburgh2013.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/sp500.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/NOAA_QCLCD_2011_hourly_13904.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/austin_airport_departure_data_2015_july.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/auto-mpg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/life_expectancy_at_birth.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/messy_stock_data.tsv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/percent-bachelors-degrees-women-usa.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/tips.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/titanic.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/weather_data_austin_2010.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/world_ind_pop_data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Pandas Foundation/world_population.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SourceCode_DataCampCourses.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SourceCode_DataCampCourses.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating with Pandas/.ipynb_checkpoints/Manipulating with Pandas-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Camp Courses/Manipulating with Pandas/.ipynb_checkpoints/Manipulating with Pandas-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating with Pandas/Manipulating with Pandas.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Camp Courses/Manipulating with Pandas/Manipulating with Pandas.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/.ipynb_checkpoints/Data Management -checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Introduction to DataCamp Projects/datasets/global_temperature.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Introduction to DataCamp Projects/datasets/project_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Introduction to DataCamp Projects/datasets/run_code_cell_image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Introduction to DataCamp Projects/notebook.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/ML_KNN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/.ipynb_checkpoints/Manipulating with Pandas-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/.ipynb_checkpoints/output-checkpoint.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/Manipulating with Pandas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/Manipulating with Pandas.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/Pandas Cookbook_Develop Powerful Routines for Exploring Real World Datasets.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/Pandas-selections-and-indexing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/ch1_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/ch2_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/ch3_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/loc_indexer_returns_series_or_dataframe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/output.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/output1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/output2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/output3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_melt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_pivot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_unstack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_unstack_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Manipulating Data with Pandas/reshaping_unstack_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/.ipynb_checkpoints/Pandas Foundation-checkpoint.asciidoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/.ipynb_checkpoints/Pandas Foundation-checkpoint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/.ipynb_checkpoints/Pandas Foundation-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/BoxPlot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.asciidoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/certificate.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/ch1_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/ch2_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/ch3_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/ch4_slides.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chi.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,25 +69,59 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/CourseScraping.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Kitty\IT_Professionalism\Machine_Learning\Python\SourceCode_DataCampCourses\Data Management\Merging DataFrames with pandas</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/automobile.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/exchange.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/oil_price.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/pittsburgh2013.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/sp500.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/NOAA_QCLCD_2011_hourly_13904.txt" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/austin_airport_departure_data_2015_july.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/auto-mpg.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/life_expectancy_at_birth.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/messy_stock_data" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/percent-bachelors-degrees-women-usa.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/tips.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/titanic.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/weather_data_austin_2010.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/world_ind_pop_data.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Pandas Foundation/world_population.csv" />
+        <option value="$PROJECT_DIR$/CourseScraping.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="694" />
-    <option name="width" value="1136" />
-    <option name="height" value="1042" />
+    <option name="x" value="691" />
+    <option name="width" value="1139" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -39,7 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -50,25 +139,32 @@
             <path>
               <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Camp Courses" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Camp Courses" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
+              <item name="Merging DataFrames with pandas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
+              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
               <item name="Pandas Foundation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../NUS/Internship-PartTimeJob/RMI-CRI/Uganda-Scraping" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -96,16 +192,18 @@
       <updated>1560706100340</updated>
       <workItem from="1560706103780" duration="505000" />
       <workItem from="1560761061083" duration="34000" />
+      <workItem from="1561124015939" duration="990000" />
+      <workItem from="1561125612158" duration="1082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539000" />
+    <option name="totallyTimeSpent" value="2611000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1422" height="843" extended-state="6" />
+    <frame x="-7" y="-7" width="1425" height="843" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532943" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21037254" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -120,13 +218,17 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Statistic" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" visible="true" weight="0.32896653" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="JuliaSciView" order="5" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="GfmBrowser" order="7" />
+      <window_info anchor="right" id="R Packages" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,12 +236,138 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/chi.html" />
-    <entry file="file://$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.html">
+    <entry file="file://$PROJECT_DIR$/Data Camp Courses/Pandas Foundation/Pandas Foundation.html" />
+    <entry file="file://$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/automobile.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="603">
+          <caret line="392" column="50" selection-start-line="392" selection-start-column="50" selection-end-line="392" selection-end-column="50" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/exchange.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="251" selection-start-line="251" selection-end-line="251" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/oil_price.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="156" column="16" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/pittsburgh2013.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="365" column="86" selection-start-line="365" selection-start-column="86" selection-end-line="365" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Merging DataFrames with pandas/sp500.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="252" column="81" selection-start-line="252" selection-start-column="81" selection-end-line="252" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/NOAA_QCLCD_2011_hourly_13904.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="10336" column="137" selection-start-line="10336" selection-start-column="137" selection-end-line="10336" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/austin_airport_departure_data_2015_july.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/auto-mpg.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="392" column="42" selection-start-line="392" selection-start-column="42" selection-end-line="392" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/life_expectancy_at_birth.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="260" column="1283" selection-start-line="260" selection-start-column="1283" selection-end-line="260" selection-end-column="1283" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/messy_stock_data.tsv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/percent-bachelors-degrees-women-usa.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="339">
+          <caret line="42" column="129" selection-start-line="42" selection-start-column="129" selection-end-line="42" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/tips.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="339">
+          <caret line="244" column="52" selection-start-line="244" selection-start-column="52" selection-end-line="244" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/titanic.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="339">
+          <caret line="1309" column="62" selection-start-line="1309" selection-start-column="62" selection-end-line="1309" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/weather_data_austin_2010.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="339">
+          <caret line="8759" column="28" selection-start-line="8759" selection-start-column="28" selection-end-line="8759" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/world_ind_pop_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="339">
+          <caret line="13374" column="35" selection-start-line="13374" selection-start-column="35" selection-end-line="13374" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Pandas Foundation/world_population.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CourseScraping.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
