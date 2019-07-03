@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14feb2ee-8964-4197-995a-f6b99564d2a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Acer_User.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CourseRanking.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_retrieval.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/police.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/weather.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/auto.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/boston.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/diabetes.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/gm_2008_region.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/house-votes-84.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/white-wine.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/winequality-red.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CourseScraping.py" beforeDir="false" afterPath="$PROJECT_DIR$/CourseScraping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Visualization/Interactive Graph with Bokeh/00 - Introduction and Setup.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/.ipynb_checkpoints/Manipulating Time Series Data in Python-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/.ipynb_checkpoints/Manipulating Time Series Data in Python-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/Manipulating Time Series Data in Python.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/Manipulating Time Series Data in Python.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/index.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Data Management/Manipulating Time Series Data in Python/index.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,41 +37,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CourseScraping.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1909">
-              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="88" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CourseRanking.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="74" column="54" selection-start-line="74" selection-start-column="54" selection-end-line="74" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../../NUS/Internship-PartTimeJob/RMI-CRI/Uganda-Scraping/UgandaScrape/UgandaDemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="129" column="21" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,6 +52,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>D:\Kitty\IT_Professionalism\Machine_Learning\Python\SourceCode_DataCampCourses\Data Management\Merging DataFrames with pandas</dir>
+      <dir>D:\Kitty\IT_Professionalism\Machine_Learning\Python\SourceCode_DataCampCourses\Data Management\Analyzing Police Activity with Pandas</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -112,14 +85,23 @@
         <option value="$PROJECT_DIR$/data_retrieval.bat" />
         <option value="$PROJECT_DIR$/CourseRanking.py" />
         <option value="$PROJECT_DIR$/../../../../NUS/Internship-PartTimeJob/RMI-CRI/Uganda-Scraping/UgandaScrape/UgandaDemo.py" />
+        <option value="$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/police.csv" />
+        <option value="$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/weather.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/auto.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/boston.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/diabetes.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/gm_2008_region.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/house-votes-84.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/white-wine.csv" />
+        <option value="$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/winequality-red.csv" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="98" />
-    <option name="y" value="65" />
-    <option name="width" value="1145" />
-    <option name="height" value="1051" />
+    <option name="x" value="93" />
+    <option name="y" value="59" />
+    <option name="width" value="1150" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,6 +109,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,25 +120,18 @@
             <path>
               <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
+              <item name="Machine Learning" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
-              <item name="Merging DataFrames with pandas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SourceCode_DataCampCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SourceCode_DataCampCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Data Management" type="462c0819:PsiDirectoryNode" />
-              <item name="Pandas Foundation" type="462c0819:PsiDirectoryNode" />
+              <item name="Machine Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="Supervised Learning with Scikit-learn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,16 +223,20 @@
       <workItem from="1561179791837" duration="5459000" />
       <workItem from="1561185268293" duration="15488000" />
       <workItem from="1561535647461" duration="633000" />
+      <workItem from="1561601546379" duration="398000" />
+      <workItem from="1561828574590" duration="151000" />
+      <workItem from="1561975776165" duration="242000" />
+      <workItem from="1562048643647" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46023000" />
+    <option name="totallyTimeSpent" value="47413000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1425" height="843" extended-state="6" />
+    <frame x="-7" y="-7" width="1422" height="843" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.17823228" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.18740849" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.28195763" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,20 +431,8 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/404.html" />
+    <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/../../../../NUS/Internship-PartTimeJob/RMI-CRI/Uganda-Scraping/UgandaScrape/InvestingScrape.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -494,8 +462,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CourseScraping.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1909">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="-261">
+          <caret line="70" column="9" selection-start-line="70" selection-end-line="70" selection-end-column="9" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -504,19 +472,109 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CourseRanking.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
+        <state relative-caret-position="544">
           <caret line="74" column="54" selection-start-line="74" selection-start-column="54" selection-end-line="74" selection-end-column="54" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/police.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="91741" column="116" selection-start-line="91741" selection-start-column="116" selection-end-line="91741" selection-end-column="116" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data Management/Analyzing Police Activity with Pandas/weather.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="4017" column="66" selection-start-line="4017" selection-start-column="66" selection-end-line="4017" selection-end-column="66" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../NUS/Internship-PartTimeJob/RMI-CRI/Uganda-Scraping/UgandaScrape/UgandaDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="129" column="21" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="21" />
+        <state relative-caret-position="130">
+          <caret line="292" column="28" lean-forward="true" selection-start-line="292" selection-start-column="28" selection-end-line="292" selection-end-column="28" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/auto.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="392" column="31" selection-start-line="392" selection-start-column="31" selection-end-line="392" selection-end-column="31" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/boston.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="506" column="70" selection-start-line="506" selection-start-column="70" selection-end-line="506" selection-end-column="70" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/diabetes.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="768" column="28" selection-start-line="768" selection-start-column="28" selection-end-line="768" selection-end-column="28" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/gm_2008_region.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="139" column="92" selection-start-line="139" selection-start-column="92" selection-end-line="139" selection-end-column="92" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/house-votes-84.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="434" column="42" selection-start-line="434" selection-start-column="42" selection-end-line="434" selection-end-column="42" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/white-wine.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="4898" column="57" selection-start-line="4898" selection-start-column="57" selection-end-line="4898" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Machine Learning/Supervised Learning with Scikit-learn/winequality-red.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="529">
+          <caret line="1599" column="50" selection-start-line="1599" selection-start-column="50" selection-end-line="1599" selection-end-column="50" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
   </component>
